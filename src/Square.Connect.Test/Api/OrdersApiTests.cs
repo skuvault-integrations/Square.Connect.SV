@@ -45,7 +45,7 @@ namespace Square.Connect.Test
 		{
 			instance = new OrdersApi();
 			testAccounts = new TestAccounts();
-			var testAccount = testAccounts["US-Prod"];
+			var testAccount = testAccounts["Sandbox"];
 			locationId = testAccount.LocationId;
 			Configuration.Default.AccessToken = testAccount.AccessToken;
 		}

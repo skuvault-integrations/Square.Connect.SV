@@ -2,13 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
+using System.Reflection;
 using Newtonsoft.Json;
 
 namespace Square.Connect.Test
 {
     public class TestAccounts
     {
-        private static readonly string jsonFilePath = @"../../../../../travis-ci/accounts.json";
+        private static readonly string jsonFilePath = @"\..\..\..\TestAccounts.json";
         private static Dictionary<String, AccountInfo> accounts;
 
         public AccountInfo this[String name]
@@ -26,7 +27,9 @@ namespace Square.Connect.Test
 
         private string LoadAccountsJson()
         {
-            using (var streamReader = new StreamReader(jsonFilePath, Encoding.UTF8))
+            var path = new Uri( Path.GetDirectoryName( Assembly.GetExecutingAssembly().CodeBase ) ).LocalPath;
+
+            using (var streamReader = new StreamReader(path + jsonFilePath, Encoding.UTF8))
             {
                 return streamReader.ReadToEnd();
             }

@@ -211,7 +211,7 @@ namespace Square.Connect.Test
         {
             instance = new CatalogApi();
             testAccounts = new TestAccounts();
-            var testAccount = testAccounts["US-Prod"];
+            var testAccount = testAccounts["Sandbox"];
             Configuration.Default.AccessToken = testAccount.AccessToken;
 
             try

@@ -44,7 +44,7 @@ namespace Square.Connect.Test
         {
             instance = new LocationsApi();
             testAccounts = new TestAccounts();
-            var sandboxAccount = testAccounts["US-Prod-Sandbox"];
+            var sandboxAccount = testAccounts["Sandbox"];
             Configuration.Default.AccessToken = sandboxAccount.AccessToken;
         }
 
@@ -78,7 +78,7 @@ namespace Square.Connect.Test
 
             Assert.IsInstanceOf<ListLocationsResponse> (response, "response type is not ListLocationsResponse.");
             Assert.IsInstanceOf<Location> (firstLocation, "response element type is not Location.");
-            Assert.AreEqual(testAccounts["US-Prod-Sandbox"].LocationId, firstLocation.Id, "first location id doesn't match.");
+            Assert.AreEqual(testAccounts["Sandbox"].LocationId, firstLocation.Id, "first location id doesn't match.");
         }
         
     }

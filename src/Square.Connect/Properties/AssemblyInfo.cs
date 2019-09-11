@@ -5,10 +5,10 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Square.Connect")]
-[assembly: AssemblyDescription("A library generated from a Swagger doc")]
+[assembly: AssemblyDescription("A fork of connect-square-sdk, downgraded to .NET Framework 4.6.1\r\nA library generated from a Swagger doc")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Square")]
-[assembly: AssemblyProduct("Square_Connect_V2_SDK")]
+[assembly: AssemblyCompany("SkuVault")]
+[assembly: AssemblyProduct("Square.Connect.SV")]
 [assembly: AssemblyCopyright("Copyright 2017 Square, Inc.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -28,6 +28,6 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.22.2")]
-[assembly: AssemblyFileVersion("2.22.2")]
-[assembly: AssemblyInformationalVersion("Square-Connect-CSharp/2.20190814.2")]
+[assembly: AssemblyVersion("2.22.2.1")]
+[assembly: AssemblyFileVersion("2.22.2.1")]
+[assembly: AssemblyInformationalVersion("2.22.2.1-rc1")]
