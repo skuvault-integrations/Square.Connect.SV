@@ -151,5 +151,47 @@ namespace Square.Connect.Test
 			Assert.AreEqual(9005, actual.TotalDiscountMoney.Amount);
 			Assert.AreEqual("USD", actual.TotalDiscountMoney.Currency);
 		}
+
+		[Test]
+		public void GetOrdersByLocation()
+		{
+			var body = new SearchOrdersRequest
+			{
+				ReturnEntries = false,
+				Limit = 10,
+				LocationIds = new List<string>
+				{
+					locationId
+				},
+				Query = new SearchOrdersQuery
+				{
+					Filter = new SearchOrdersFilter
+					{
+						DateTimeFilter = new SearchOrdersDateTimeFilter
+						{
+							UpdatedAt = new TimeRange
+							{
+								StartAt = "2010-03-03T20:00:00Z",
+								EndAt = "2040-03-03T20:00:00Z"
+							}
+						},
+						StateFilter = new SearchOrdersStateFilter( 
+							new List<string>
+							{
+								"COMPLETED",
+								"OPEN",
+								"CANCELED"
+							}
+						)
+					},
+					Sort = new SearchOrdersSort("UPDATED_AT", "DESC")
+				}
+			};
+
+			var response = instance.SearchOrdersAsync(body).Result;
+
+			Assert.IsTrue(response.Errors == null || response.Errors.Count == 0);
+			Assert.AreNotEqual(0, response.Orders.Count);
+		}
 	}
 }
