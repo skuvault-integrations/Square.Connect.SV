@@ -10,14 +10,19 @@ Contact: developers@squareup.com
 
   <PropertyGroup>
     <TargetFramework>net461</TargetFramework>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
-    <NuspecFile>Square.Connect.nuspec</NuspecFile>
     <Authors>SkuVault</Authors>
     <PackageId>Square.Connect.SV</PackageId>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/skuvault/Square.Connect.SV</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/skuvault/Square.Connect.SV/blob/master/LICENSE</PackageLicenseUrl>
+    <Version>2.22.2.1-rc1</Version>
+    <Product>Square.Connect.SV</Product>
+    <Description>A fork of connect-square-sdk, downgraded to .NET Framework 4.6.1
+A library generated from a Swagger doc</Description>
+    <Copyright>Copyright 2017 Square, Inc.</Copyright>
+    <RepositoryUrl>https://github.com/skuvault/Square.Connect.SV</RepositoryUrl>
+    <AssemblyVersion>2.22.2.1</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
