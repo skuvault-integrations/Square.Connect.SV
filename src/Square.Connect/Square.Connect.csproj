@@ -16,18 +16,18 @@ Contact: developers@squareup.com
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/skuvault/Square.Connect.SV</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/skuvault/Square.Connect.SV/blob/master/LICENSE</PackageLicenseUrl>
-    <Version>2.22.2.1-rc1</Version>
+    <Version>2.22.2.2-rc1</Version>
     <Product>Square.Connect.SV</Product>
     <Description>A fork of connect-square-sdk, downgraded to .NET Framework 4.6.1
 A library generated from a Swagger doc</Description>
     <Copyright>Copyright 2017 Square, Inc.</Copyright>
     <RepositoryUrl>https://github.com/skuvault/Square.Connect.SV</RepositoryUrl>
-    <AssemblyVersion>2.22.2.1</AssemblyVersion>
+    <AssemblyVersion>2.22.2.2</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.5.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
     <PackageReference Include="RestSharp" Version="106.3.1" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
   </ItemGroup>
