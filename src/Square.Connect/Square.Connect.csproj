@@ -16,13 +16,13 @@ Contact: developers@squareup.com
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/skuvault/Square.Connect.SV</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/skuvault/Square.Connect.SV/blob/master/LICENSE</PackageLicenseUrl>
-    <Version>2.22.2.2-rc1</Version>
+    <Version>2.22.2.3</Version>
     <Product>Square.Connect.SV</Product>
     <Description>A fork of connect-square-sdk, downgraded to .NET Framework 4.6.1
 A library generated from a Swagger doc</Description>
     <Copyright>Copyright 2017 Square, Inc.</Copyright>
     <RepositoryUrl>https://github.com/skuvault/Square.Connect.SV</RepositoryUrl>
-    <AssemblyVersion>2.22.2.2</AssemblyVersion>
+    <AssemblyVersion>2.22.2.3</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
